@@ -1,5 +1,5 @@
 {
-    "name": "@ipfind/mcp-server",
+    "name": "@ipfind/ipfind-mcp-server",
     "version": "0.1.0",
     "description": "MCP server for interacting with IP Find API",
     "license": "MIT",
