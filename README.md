@@ -25,7 +25,7 @@ To use this server with the Claude Desktop app, add the following configuration 
     "mcpServers": {
         "ipfind": {
             "command": "npx",
-            "args": ["-y", "ipfind/mcp-server"],
+            "args": ["-y", "@ipfind/ipfind-mcp-server"],
             "env": {
                 "IPFIND_API_KEY": "<API KEY GOES HERE>"
             }
