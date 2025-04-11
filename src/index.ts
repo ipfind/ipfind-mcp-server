@@ -130,9 +130,5 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 });
 
-try {
-  const transport = new StdioServerTransport();
-  await server.connect(transport);
-} catch (error) {
-  console.error(error);
-}
+const transport = new StdioServerTransport();
+await server.connect(transport);

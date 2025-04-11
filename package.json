@@ -6,6 +6,9 @@
     "author": "IP Find",
     "repository": "github:ipfind/ipfind-mcp-server",
     "homepage": "https://ipfind.com",
+    "engines": {
+        "node": ">=18"
+    },
     "type": "module",
     "bin": {
         "mcp-server-ipfind": "build/index.js"
