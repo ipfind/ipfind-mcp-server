@@ -17,6 +17,21 @@ const server = new Server(
   }
 );
 
+const nodeVersion = process.version;
+const majorVersion =
+  nodeVersion.indexOf(".") > -1
+    ? parseInt(nodeVersion.slice(1).split(".")[0], 10)
+    : 0;
+
+if (majorVersion < 18) {
+  const nodeExecutablePath = process.execPath;
+
+  console.error(
+    `[IP Find] - Node Version ${nodeVersion} is not supported. Requires version 18 or higher.\n Executable Path: ${nodeExecutablePath}`
+  );
+  process.exit(1);
+}
+
 let apiKey = process.env.IPFIND_API_KEY;
 
 if (!apiKey) {
