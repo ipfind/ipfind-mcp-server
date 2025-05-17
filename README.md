@@ -1,4 +1,5 @@
 # IP Find MCP Server
+[![smithery badge](https://smithery.ai/badge/@ipfind/ipfind-mcp-server)](https://smithery.ai/server/@ipfind/ipfind-mcp-server)
 
 A Model Context Protocol server that enables AI assistants to use IP Find. 
 
@@ -15,6 +16,14 @@ The MCP server:
 -   NodeJS
 -   MCP Client (like Claude Desktop App)
 -   IP Find API Key
+
+### Installing via Smithery
+
+To install IP Find MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@ipfind/ipfind-mcp-server):
+
+```bash
+npx -y @smithery/cli install @ipfind/ipfind-mcp-server --client claude
+```
 
 ### Installation
 
