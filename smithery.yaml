@@ -1,0 +1,19 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['build/index.js'], env: { IPFIND_API_KEY: config.ipfindApiKey } })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - ipfindApiKey
+    properties:
+      ipfindApiKey:
+        type: string
+        description: API key for IP Find service
+  exampleConfig:
+    ipfindApiKey: YOUR_IPFIND_API_KEY_HERE
