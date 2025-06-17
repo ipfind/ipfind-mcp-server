@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/ipfind-ipfind-mcp-server-badge.png)](https://mseep.ai/app/ipfind-ipfind-mcp-server)
+
 # IP Find MCP Server
 
 A Model Context Protocol server that enables AI assistants to use IP Find. 
