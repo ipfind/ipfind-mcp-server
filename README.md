@@ -35,3 +35,6 @@ To use this server with the Claude Desktop app, add the following configuration 
 ```
 
 -   `IPFIND_API_KEY` - You can generate an API key at IPfind.com.
+
+
+Certified by [MCPHub](https://mcphub.com/mcp-servers/ipfind/ipfind-mcp-server)
